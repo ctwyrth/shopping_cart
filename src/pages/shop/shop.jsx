@@ -1,13 +1,13 @@
 import React from 'react';
 import { PRODUCTS } from '../../products';
-import Product from './product';
+import { Product } from './product';
 import './shop.css';
 
 const Shop = () => {
   return (
     <div className="shop">
       <div className="shopTitle">
-        <h1>Thomas' Shop</h1>
+        <h1>Current Inventory</h1>
       </div>
       <div className="products">
         {PRODUCTS.map((product) => <Product data={product}/>)}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Product = (props) => {
+export const Product = (props) => {
   const { id, productName, price, productImage } = props.data;
 
   return (
@@ -8,12 +8,13 @@ const Product = (props) => {
       <div className="image">
         <img src={productImage} alt={productName} />
       </div>
-      <div className="description">
-        <p><b>{productName}</b></p>
-        <p>${price}</p>
+      <div className="info">
+        <div className="description">
+          <p><b>{productName}</b></p>
+          <p>${price}</p>
+        </div>
+        <button className="addToCartBttn">Add To Cart</button>
       </div>
     </div>
   )
-}
-
-export default Product;
+};
