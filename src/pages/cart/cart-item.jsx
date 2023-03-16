@@ -9,7 +9,7 @@ const CartItem = (props) => {
     <div className="cartItem">
       <img src={productImage} alt={productName} />
       <div className="description">
-        <p><b>{productName}</b></p>
+        <p className="itemName">{productName}</p>
         <p>${price}</p>
         <div className="countHandler">
           <button onClick={() => removeFromCart(id)}> - </button>
