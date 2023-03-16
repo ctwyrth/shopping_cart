@@ -6,20 +6,21 @@
   margin-top: 120px;
 }
 
-.cart h1 {
+h1:first-child {
   font-size: 2.5rem;
   text-transform: uppercase;
+  margin-bottom: 3rem;
 }
 
 .cartItem {
   width: 700px;
   height: 250px;
   display: flex;
-
   align-items: center;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
   border-radius: 25px;
   margin: 30px;
+  padding: 1.25rem 1.75rem;
 }
 
 .cartItem img {
@@ -28,13 +29,32 @@
 
 .cartItem .description {
   width: 100%;
-  font-size: 30px;
+  margin-left: 1.75rem;
+}
+
+.cartItem .description p {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.cartItem .description p b {
+  font-size: 2rem;
 }
 
 .countHandler input {
-  width: 40px;
+  width: 2.5rem;
+  height: 1.25rem;
   text-align: center;
   font-weight: bolder;
+}
+
+.countHandler button {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.checkout {
+  margin-bottom: 5rem;
 }
 
 .checkout button {
@@ -46,4 +66,8 @@
   border-radius: 8px;
   margin: 10px;
   cursor: pointer;
+}
+
+.checkout p {
+  margin: 1rem 0 1.25rem;
 }
